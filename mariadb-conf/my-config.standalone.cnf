@@ -1,0 +1,13 @@
+[mariadb]
+plugin_maturity=experimental
+datadir=/Users/tianxiaoji/workspace/mariadb-data/data0
+max_connections=500
+skip-log-bin
+port=3320
+socket = /tmp/mysqld3320.sock
+plugin_load_add=ha_monograph
+monograph
+monograph_cass_hosts=127.0.0.1
+monograph_core_num=1
+monograph_cass_user=cassandra
+monograph_cass_password=cassandra
