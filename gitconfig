@@ -29,3 +29,5 @@
         l1  = log --oneline
         a   = add
 	ct  = commit
+	ph  = push
+	phf = push -f
