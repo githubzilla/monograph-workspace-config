@@ -1,0 +1,31 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name  = githubzilla
+	email = githubzilla@gmail.com
+[filter "lfs"]
+	clean    = git-lfs clean -- %f
+	smudge   = git-lfs smudge -- %f
+	process  = git-lfs filter-process
+	required = true
+[diff]
+	tool = bc
+[difftool "bc"]
+	path = /usr/local/bin/bcomp
+[merge]
+	tool = bc
+[mergetool "bc"]
+	path = /usr/local/bin/bcomp
+[core]
+	excludesfile = /Users/tianxiaoji/.gitignore_global
+[commit]
+	template = /Users/tianxiaoji/.stCommitMsg
+
+[alias]
+        s   = status
+        co  = checkout
+        cob = checkout -B
+        pr  = pull --rebase
+        l1  = log --oneline
+        a   = add
+	ct  = commit
