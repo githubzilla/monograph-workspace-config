@@ -26,9 +26,13 @@
         co  = checkout
         cob = checkout -B
         pr  = pull --rebase
+	pl  = pull
         l1  = log --oneline
         a   = add
 	ct  = commit
 	ctm = commit -m
 	ph  = push
 	phf = push -f
+	df  = diff
+	sw  = show
+	rt  = reset
