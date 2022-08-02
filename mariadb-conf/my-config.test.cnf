@@ -18,6 +18,8 @@
 #monograph_ip_list=127.0.0.1:8000
 
 [mariadb]
+port=3320
+socket=/tmp/mysqld3320.sock
 plugin_maturity=experimental
 plugin_load_add=ha_monograph
 monograph

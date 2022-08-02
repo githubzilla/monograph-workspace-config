@@ -16,3 +16,4 @@ monograph_cass_user=cassandra
 monograph_cass_password=cassandra
 monograph_local_ip=127.0.0.1:8000
 monograph_ip_list=127.0.0.1:8000
+monograph_cass_keyspace_name=mono
