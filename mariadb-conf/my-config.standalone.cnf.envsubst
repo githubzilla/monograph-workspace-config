@@ -2,8 +2,8 @@
 #This configuration is used in for single node instance and bootstrap.
 [mariadb]
 plugin_maturity=experimental
-datadir=/Users/tianxj/workspace/mariadb-data/data-template/
-lc_messages_dir=/Users/tianxj/workspace/mariadb-bin/share/
+datadir=$HOME/workspace/mariadb-data/data-template/
+lc_messages_dir=$HOME/workspace/mariadb-bin/share/
 max_connections=500
 skip-log-bin
 port=3320

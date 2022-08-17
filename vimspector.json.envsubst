@@ -1,0 +1,22 @@
+{
+    "configurations": {
+        "lldb": {
+            "adapter": "CodeLLDB",
+            "configuration": {
+                "name": "Launch",
+                "type": "lldb",
+                "request": "launch",
+                "program": "$HOME/workspace/mariadb-bin/bin/mysqld",
+                "args": ["--defaults-file=$HOME/workspace/mariadb-conf/my-config.standalone.cnf"],
+                "sourceLanguages": ["cpp"]
+            },
+            "breakpoints": {
+                "exception": {
+                    "cpp_throw": "Y",
+                    "cpp_catch": "N"
+                }
+            }
+        }
+    }
+}
+

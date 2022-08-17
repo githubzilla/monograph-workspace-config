@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# envsubst generated files
+vimspector.json
+my-config.cnf1
+my-config.cnf2
+my-config.cnf3
+my-config.standalone.cnf
