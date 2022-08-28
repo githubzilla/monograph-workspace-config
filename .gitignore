@@ -33,7 +33,8 @@
 
 # envsubst generated files
 vimspector.json
-my-config.cnf1
-my-config.cnf2
-my-config.cnf3
-my-config.standalone.cnf
+mariadb-conf/my-config.cnf1
+mariadb-conf/my-config.cnf2
+mariadb-conf/my-config.cnf3
+mariadb-conf/my-config.standalone.cnf
+tasks
