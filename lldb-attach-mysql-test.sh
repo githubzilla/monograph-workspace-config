@@ -19,6 +19,5 @@ do
 done
 echo "mysql-test started"
 
-sleep 2
 echo "lldb attach to mariadbd"
 lldb -n mariadbd
