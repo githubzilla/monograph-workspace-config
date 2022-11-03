@@ -20,4 +20,4 @@ done
 echo "mysql-test started"
 
 echo "gdb attach to mariadbd"
-gdb ~/workspace/mariadb-bin/bin/mariadbd -p `pgrep mariadbd`
+sudo gdb ~/workspace/mariadb-bin/bin/mariadbd -p `pgrep mariadbd`
