@@ -1,18 +1,18 @@
 [project-build]
-command=/usr/local/bin/cmake --build $HOME/workspace/mariadb/bld --config Debug --target all -j8
+command=cmake --build $HOME/workspace/mariadb/bld --config Debug --target all -j8
 # set the working directory to the project root.
 cwd=$(VIM_ROOT)
 output=quickfix
 save=3
 
 [project-clean]
-command=/usr/local/bin/cmake --build $HOME/workspace/mariadb/bld --target clean
+command=cmake --build $HOME/workspace/mariadb/bld --target clean
 # set the working directory to the project root.
 cwd=$(VIM_ROOT)
 output=terminal
 
 [project-install]
-command=/usr/local/bin/cmake --build $HOME/workspace/mariadb/bld --config Debug --target install -j8
+command=cmake --build $HOME/workspace/mariadb/bld --config Debug --target install -j8
 cwd=$(VIM_ROOT)
 output=terminal
 save=2
