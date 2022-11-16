@@ -54,7 +54,7 @@ windows:
   - mysql-test:
      root: ~/workspace/mariadb/bld/mysql-test/
   - mysql-test-log:
-     root: ~/workspace/mariadb/bld/mysql-test/var/log/
+     root: ~/workspace/mariadb/bld/mysql-test/
   - mysql-test-src:
      root: ~/workspace/mariadb/storage/monograph/mysql-test/
   - lldb:
