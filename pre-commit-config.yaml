@@ -1,0 +1,20 @@
+# 1. Install
+#    pip install pre-commit
+# 2. Config
+#    cp pre-commit-config.yaml ${git-repo}/.pre-commit-config.yaml
+# 3. Enable
+#    # under git repo directory
+#    pre-commit install
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+   - id: trailing-whitespace
+   - id: end-of-file-fixer
+   - id: check-added-large-files
+
+- repo: https://github.com/pre-commit/mirrors-clang-format
+  rev: v15.0.4
+  hooks:
+   - id: clang-format
