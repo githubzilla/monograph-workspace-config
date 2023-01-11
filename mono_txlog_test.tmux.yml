@@ -1,6 +1,6 @@
 # ./.tmuxinator.yml
 
-name: mono-test
+name: mono-txlog-test
 root: ~/
 
 # Optional tmux socket
