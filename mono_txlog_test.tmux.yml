@@ -48,24 +48,24 @@ windows:
   - cass:
      root: ~/workspace
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@43.207.114.27
+       - ssh ubuntu@172.31.43.213
   - tx:
      root: ~/workspace/
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@54.65.248.218
+       - ssh ubuntu@172.31.44.171
   - txlog0:
      root: ~/workspace/
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@18.182.64.43
+       - ssh ubuntu@172.31.47.86
   - txlog1:
      root: ~/workspace/
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@3.112.81.255
+       - ssh ubuntu@172.31.25.183
   - txlog2:
      root: ~/workspace/
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@43.206.122.148
+       - ssh ubuntu@172.31.9.230
   - tpcc:
      root: ~/workspace/
      panes:
-       - ssh -oStrictHostKeyChecking=accept-new ubuntu@52.199.159.154
+       - ssh ubuntu@172.31.38.99
