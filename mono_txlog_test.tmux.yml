@@ -48,24 +48,24 @@ windows:
   - cass:
      root: ~/workspace
      panes:
-       - ssh ubuntu@172.31.43.213
+       - ssh -t ubuntu@172.31.43.213 "cd /home/ubuntu/workspace/apache-cassandra/bin ; zsh --login"
   - tx:
      root: ~/workspace/
      panes:
-       - ssh ubuntu@172.31.44.171
+       - ssh -t ubuntu@172.31.44.171 "cd /home/ubuntu/workspace ; zsh --login"
   - txlog0:
-     root: ~/workspace/
+     root: ~/workspace
      panes:
-       - ssh ubuntu@172.31.47.86
+       - ssh -t ubuntu@172.31.47.86 "cd /home/ubuntu/workspace/mariadb/storage/monograph/tx_service/log_service/bld ; zsh --login"
   - txlog1:
      root: ~/workspace/
      panes:
-       - ssh ubuntu@172.31.25.183
+       - ssh -t ubuntu@172.31.25.183 "cd /home/ubuntu/workspace/mariadb/storage/monograph/tx_service/log_service/bld ; zsh --login"
   - txlog2:
      root: ~/workspace/
      panes:
-       - ssh ubuntu@172.31.9.230
+       - ssh -t ubuntu@172.31.9.230 "cd /home/ubuntu/workspace/mariadb/storage/monograph/tx_service/log_service/bld ; zsh --login"
   - tpcc:
      root: ~/workspace/
      panes:
-       - ssh ubuntu@172.31.38.99
+       - ssh -t ubuntu@172.31.38.99 "cd /home/ubuntu/workspace/mariadb/storage/monograph/tx_service/log_service/bld ; zsh --login"
