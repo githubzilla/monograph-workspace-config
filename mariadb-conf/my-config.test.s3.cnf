@@ -1,0 +1,26 @@
+#my-cnf0
+#This configuration is used in for single node instance and bootstrap.
+[mariadb]
+plugin_maturity=experimental
+datadir=/home/ubuntu/workspace/mariadb-data/data-template/
+lc_messages_dir=/home/ubuntu/workspace/mariadb-bin/share/
+max_connections=500
+skip-log-bin
+port=3320
+socket=/tmp/mysqld3320.sock
+plugin_load_add=ha_monograph
+monograph
+monograph_cass_hosts=127.0.0.1
+monograph_core_num=1
+monograph_kv_storage=cass
+monograph_cass_user=cassandra
+monograph_cass_password=cassandra
+monograph_local_ip=127.0.0.1:8000
+monograph_ip_list=127.0.0.1:8000
+monograph_keyspace_name=mono_test
+monograph_checkpointer_delay_sec=0
+#monograph_txlog_service_list=127.0.0.1:8002,127.0.0.1:8012,127.0.0.1:8022
+monograph_rocksdb_cloud_bucket_name=monographdb-test-my
+monograph_rocksdb_cloud_bucket_prefix=mtr1339-
+monograph_rocksdb_cloud_region=ap-northeast-1
+monograph_rocksdb_cloud_sst_file_cache_size=10GB

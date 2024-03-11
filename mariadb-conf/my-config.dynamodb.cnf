@@ -1,0 +1,20 @@
+#my-cnf0
+#This configuration is used in for single node instance and bootstrap.
+[mariadb]
+plugin_maturity=experimental
+datadir=/home/ubuntu/workspace/mariadb-data/data-template/
+lc_messages_dir=/home/ubuntu/workspace/mariadb-bin/share/
+max_connections=500
+skip-log-bin
+port=3320
+socket=/tmp/mysqld3320.sock
+plugin_load_add=ha_monograph
+monograph
+monograph_cass_hosts=127.0.0.1
+monograph_core_num=1
+monograph_kv_storage=dynamo
+monograph_local_ip=127.0.0.1:8000
+monograph_ip_list=127.0.0.1:8000
+monograph_checkpointer_delay_sec=0
+monograph_dynamodb_region=ap-northeast-1
+monograph_dynamodb_endpoint='http://127.0.0.1:8050'
